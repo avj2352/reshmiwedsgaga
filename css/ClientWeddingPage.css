@@ -1,0 +1,98 @@
+@font-face {
+    font-family: 'Sofia';
+    src:url('../fonts/Sofia-Regular.otf') format('opentype');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'GreatVibes';
+    src:url('../fonts/GreatVibes-Regular.otf') format('opentype');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'Lobster';
+    src:url('../fonts/Lobster_1.3.otf') format('opentype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+.container > header h1{
+    font-family: GreatVibes;
+    color: #46307e;
+    /*font-weight: 400;*/
+    font-size: 50px;
+}
+
+.myNavigation{
+    /*border: 1px solid #c7254e;*/
+    position: relative;
+    top: -45px;
+}
+
+.myNavigation nav{
+    text-align: center;
+}
+
+.myNavigation a{
+    display: inline-block;
+    text-align: center;
+    padding: 0px 15px;
+}
+
+.myNavigation a:visited{
+    text-decoration: none;
+}
+
+#myChatBackground{
+    background: url("../images/demo2/chatbox_up.jpg");
+}
+
+.chatBubble{
+    border: 1px solid #ff5aa5;
+    margin: 10px 10px 20px 10px;
+    padding-bottom: 5px;
+
+    /*CSS Gradient Background*/
+    background: #ff2687; /* Old browsers */
+    background: -moz-linear-gradient(top, #ff2687 0%, #af1c5f 100%); /* FF3.6+ */
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#ff2687), color-stop(100%,#af1c5f)); /* Chrome,Safari4+ */
+    background: -webkit-linear-gradient(top, #ff2687 0%,#af1c5f 100%); /* Chrome10+,Safari5.1+ */
+    background: -o-linear-gradient(top, #ff2687 0%,#af1c5f 100%); /* Opera 11.10+ */
+    background: -ms-linear-gradient(top, #ff2687 0%,#af1c5f 100%); /* IE10+ */
+    background: linear-gradient(to bottom, #ff2687 0%,#af1c5f 100%); /* W3C */
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ff2687', endColorstr='#af1c5f',GradientType=0 ); /* IE6-9 */
+    /*CSS Gradient Background ends here*/
+
+    color: #fff;
+    /*Rounded corners*/
+    -webkit-border-radius: 15px;
+    -moz-border-radius: 15px;
+    border-radius: 15px;
+
+}
+
+
+.chatBubble>.text{
+    /*border: 1px solid #c7254e;*/
+    padding: 10px;
+    text-align: left;
+}
+
+.chatBubble>.details{
+    font-size: 14px;
+    text-align: right;
+    padding-right: 10px;
+}
+
+
+
+@media screen {
+    .myNavigation a:visited{
+        text-decoration: none;
+    }
+    .myNavigation a{
+        text-decoration: none;
+    }
+}
+
