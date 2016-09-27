@@ -116,48 +116,24 @@
             $.mbAudio.sounds = {
                 backgroundMusic: {
                     id: "backgroundMusic",
-                    mp3: "audio/AjeebDastan.mp3",
+                    mp3: "audio/Kehte_Hain.mp3",
                     sprite: {
                         intro: {
                             id: "intro",
+                            start: 1,
+                            end: 35,
+                            loop: true
+                        },
+                        fullSong: {
+                            id: "fullSong",
                             start: 80,
                             end: 116.975,
-                            loop: true
-                        },
-                        levelIntro: {
-                            id: "levelIntro",
-                            start: 3.4,
-                            end: 22,
-                            loop: true
-                        },
-                        tellStory: {
-                            id: "tellStory",
-                            start: 80,
-                            end: 116.975,
-                            loop: true
-                        },
-                        level1: {
-                            id: "level1",
-                            start: 5,
-                            end: 13,
-                            loop: true
-                        },
-                        level2: {
-                            id: "level2",
-                            start: 40,
-                            end: 56,
-                            loop: true
-                        },
-                        level3: {
-                            id: "level3",
-                            start: 120,
-                            end: 136.030,
                             loop: true
                         }
                     }
                 }
-            };
-            $.mbAudio.play('backgroundMusic', 'levelIntro');
+            };//$.mbAudio.sounds
+            $.mbAudio.play('backgroundMusic', 'intro');
         }; //end:playMusic()
     } //end:musicController
 
