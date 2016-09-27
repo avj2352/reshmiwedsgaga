@@ -47,7 +47,10 @@
         <header>
             <h1>Reshmi Weds Gagan</h1>
               <div ng-controller="musicController">
-                <p><button class="btn btn-danger btn-sm" ng-click="playMusic()">Play Music</button></p>
+                <p>
+                  <button class="btn btn-danger btn-sm" ng-click="playMusic()">Play Music</button>
+                  <a href="#myGoogleMapSection" class="goToGoogleMapSection btn btn-danger btn-sm">Venue (Google Map)</a>
+                </p>
               </div>
             <h1><span style="font-size: 28px">Please leave your comments in the last page!!</span></h1>
         </header>
@@ -195,12 +198,39 @@
                 <!--bb-bookblock-->
             </div>
         </div>
-        <div class="row myNavigation col-lg-12">
-            <nav class="center-block">
-                <a id="bb-nav-prev" href="#" class="bb-custom-icon bb-custom-icon-arrow-left">Previous</a>
-                <a id="bb-nav-next" href="#" class="bb-custom-icon bb-custom-icon-arrow-right">Next</a>
-            </nav>
+        <div class="row col-lg-12 ">
+          <div class="col-lg-6 center-div">
+            <!-- <a id="bb-nav-prev" href="#" class="btn btn-sm btn-danger"><span class="bb-custom-icon bb-custom-icon-arrow-left"></span> Previous Page</a> -->
+            <p>
+              <button id="bb-nav-prev" class="btn btn-danger btn-sm">Previous Page</button>
+              &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+              <button id="bb-nav-next" class="btn btn-danger btn-sm">Next Page</button>
+            </p>
+            <!-- <a id="bb-nav-next" href="#" class="btn btn-sm btn-danger"><span class="bb-custom-icon bb-custom-icon-arrow-right"></span> Next Page</a> -->
+          </div>
         </div>
+        <!-- Geolocation -->
+        <a id="myGoogleMapSection"></a>
+        <div class="row col-lg-12" ng-controller="geoLocationController">
+          <div class="col-lg-12 googleMapBoxDiv">
+            <h2 class="venueHeader">Venue</h2>
+              <div class="myGoogleMap">
+                <div class="loadingMap">
+                  <p>Loading...</p>
+                  <div class="progress progress-striped active"> <div class="progress-bar" style="width: 100%"></div></div>
+                </div>
+                <div class="mapArea" id="mapArea"></div>
+              </div>
+              <!-- <button type="button" class="btn btn-danger btn-sm" ng-click="startTacking()" name="Start Button">Start Tracking</button> -->
+              <!-- <button type="button" class="btn btn-success btn-sm" ng-click="clearTacking()" name="Stop Button">Stop Tracking</button> -->
+              <div class="">&nbsp;</div>
+              <div class="">&nbsp;</div>
+              <div class="">&nbsp;</div>
+              <div class="">&nbsp;</div>
+              <div class="">&nbsp;</div>
+          </div>
+        </div>
+        <!--end: Geolocation -->
     </div>
     <!-- /container -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>

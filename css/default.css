@@ -50,7 +50,7 @@ a img {
 .main,
 .container > header {
 	margin: 0 auto;
-	padding: 2em;
+	padding: 2em 2em 0;
 }
 
 .container {
@@ -284,7 +284,7 @@ a img {
 		width: 100%;
 		min-width: auto;
 		min-height: auto;
-		padding: 1em; 
+		padding: 1em;
 	}
 
 	.column p {
@@ -315,4 +315,3 @@ a img {
     }
 
 }
-

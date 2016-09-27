@@ -27,7 +27,7 @@
 .myNavigation{
     /*border: 1px solid #c7254e;*/
     position: relative;
-    top: -45px;
+    /*top: -45px;*/
 }
 
 .myNavigation nav{
@@ -85,7 +85,7 @@
     padding-right: 10px;
 }
 
-
+.venueHeader { font-family: GreatVibes; color: #46307e; font-size: 50px; }
 
 @media screen {
     .myNavigation a:visited{
@@ -95,4 +95,3 @@
         text-decoration: none;
     }
 }
-

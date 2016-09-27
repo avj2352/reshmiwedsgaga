@@ -7,3 +7,5 @@ Wedding Card Javascript API from bookblock.com
 
 # Added jQuery.mb.audio plugin to play in Mobile browsers
 ## Let's check if this works on Mobile devices!
+
+# Added Geolocation Map
