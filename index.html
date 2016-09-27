@@ -42,11 +42,13 @@
     <div class="container">
         <!-- Top Navigation -->
         <div class="codrops-top clearfix">
-            <audio src="audio/weddingSong.mpeg" preload="auto" autoplay loop/>
+            <!-- <audio src="audio/weddingSong.mpeg" preload="auto" autoplay loop/> -->
         </div>
         <header>
             <h1>Reshmi Weds Gagan</h1>
-
+              <div ng-controller="musicController">
+                <p><button class="btn btn-danger btn-sm" ng-click="playMusic()">Play Music</button></p>
+              </div>
             <h1><span style="font-size: 28px">Please leave your comments in the last page!!</span></h1>
         </header>
         <div class="main clearfix">
@@ -215,6 +217,7 @@
         $(document).octoberLeaves();
     </script>
     <!--JQuery Leaves Falling Effect ends here-->
+    <script src="js/lib/jquery.mb.audio.js"></script>
 </body>
 
 </html>

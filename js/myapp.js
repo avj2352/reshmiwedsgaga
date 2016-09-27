@@ -12,6 +12,30 @@ myApp.filter('reverse', function() {
     };
   });//reverseFunction
 
+myApp.controller('musicController',['$scope',musicController]);
+function musicController($scope){
+  var vm = $scope;
+  vm.playMusic = function(){
+    debugger;
+    console.log("Playing Music");
+    $.mbAudio.sounds = {
+      backgroundMusic: {
+        id    : "backgroundMusic",
+        mp3   : "audio/AjeebDastan.mp3",
+        sprite: {
+            intro     : {id: "intro", start: 80, end: 116.975, loop: true},
+            levelIntro: {id: "levelIntro", start: 3.4, end: 22, loop: true},
+            tellStory : {id: "tellStory", start: 80, end: 116.975, loop: true},
+            level1    : {id: "level1", start: 5, end: 13, loop: true},
+            level2    : {id: "level2", start: 40, end: 56, loop: true},
+            level3    : {id: "level3", start: 120, end: 136.030, loop: true}
+        }
+      }
+    };
+    $.mbAudio.play('backgroundMusic','levelIntro');
+  };//end:playMusic()
+}//end:musicController
+
 myApp.controller('formController', ['$scope',function($scope){
 }]);/*end controller: formController*/
 
@@ -29,8 +53,6 @@ myApp.controller('firebaseController',['$scope','$firebaseObject','$firebaseArra
         id:0
     });/*model*/
 
-
-    //var ref = new Firebase('https://prathikshawedding.firebaseio.com/chatbox');
     var ref = new Firebase('https://gagaandreshmi.firebaseio.com/chatbox');
     vm.chats = $firebaseArray(ref);
     vm.chatListObject = $firebaseObject(ref);
